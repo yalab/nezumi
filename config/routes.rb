@@ -1,6 +1,6 @@
 Nezumi::Application.routes.draw do
-  get "root/index"
-  get "root/breakout"
+  get :breakout, to: 'root#breakout'
+  root "root#index"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
